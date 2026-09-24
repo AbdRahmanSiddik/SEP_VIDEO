@@ -119,35 +119,71 @@ Photorealistic.
 
 ---
 
-# VEO-04 — CROWD FOR COMPUTER VISION
+# VEO-04 — CROWD + YOLO COMPUTER VISION OVERLAY
 
 ## Purpose
-Scene 08 — source footage for YOLO-style tracking/compositing.
+Scene 08 — generate the crowd footage WITH a convincing YOLO-style computer-vision overlay already visible in the generated video.
+
+**Production constraint:** this version is designed for a deadline workflow with no manual bounding-box compositing. The generated result should already visually communicate multi-object detection and visitor estimation. The overlay is a visual representation of the SEP concept, not a claim that Veo itself executed the actual YOLO model.
 
 ## Prompt
 
-Generate clean photorealistic documentary footage of a large but realistic crowd attending a cultural event in Sumenep, Madura, East Java, Indonesia.
+Generate a photorealistic documentary-style video of a large but realistic crowd attending a cultural event in Sumenep, Madura, East Java, Indonesia.
 
-Camera position: elevated viewpoint approximately 3–5 meters above ground, looking diagonally across the crowd. The camera remains stable and moves slowly forward or sideways.
+The shot must clearly show a computer-vision people-detection visualization integrated into the footage.
 
-People should walk naturally in different directions, creating clear individual human silhouettes. Maintain enough spacing that individual people can be visually separated. Include adults, teenagers and families. Some people stand still, some walk, some turn, and some look toward the event.
+Start with approximately 1–2 seconds of normal clean crowd footage. The camera is at an elevated viewpoint approximately 3–5 meters above ground, looking diagonally across the crowd. The camera remains stable and moves slowly forward or sideways.
 
-The crowd should move continuously for the entire shot. Avoid people suddenly appearing or disappearing.
+People should walk naturally in different directions, with enough spacing that individual human silhouettes can be visually distinguished. Include adults, teenagers and families. Some people stand, some walk, some turn, and some look toward the event.
 
-Lighting should be consistent and bright enough for computer-vision tracking. Avoid heavy smoke, extreme darkness, severe motion blur or obstructions.
+After the opening moment, gradually introduce a realistic YOLO-style computer-vision overlay. Place rectangular bounding boxes tightly around clearly visible people. Each detected person should have a small simple label such as "person" or "PERSON". The boxes should remain visually attached to the correct people as they move.
 
-The composition should resemble real CCTV/event documentation footage rather than a cinematic action sequence.
+The overlay should feel like a real computer-vision demonstration: clean thin bounding boxes, restrained technical styling, subtle tracking behavior and a small counter in a corner of the frame.
 
-Important: the people must remain visually distinct and anatomically correct throughout the shot. No duplicated bodies, merging people, warped faces or unnatural movement.
+Show the visitor counter increasing naturally as more people are detected, for example:
+"PERSONS DETECTED: 37"
+then
+"PERSONS DETECTED: 42"
+then
+"PERSONS DETECTED: 48"
 
-Leave enough visual detail for later post-production object-detection bounding boxes to be composited over the footage.
+The exact numbers are illustrative only. Do not imply that these are real measured attendance figures.
 
-No bounding boxes in the generated footage.
-No numbers.
-No UI.
-No labels.
-No text.
-No logos.
+Make the transition visually clear:
+normal crowd footage → people detection begins → multiple people tracked → counter updates.
+
+The computer-vision overlay must remain readable but must NOT cover the entire image. Keep the crowd and event atmosphere visible underneath.
+
+The detected people must remain visually distinct and anatomically correct throughout the shot. Avoid duplicated bodies, merging people, disappearing people, boxes attached to empty space, boxes jumping randomly, or boxes drifting away from the people they are supposed to track.
+
+Lighting should be consistent and bright enough for reliable-looking visual tracking. Avoid heavy smoke, extreme darkness, severe motion blur or major obstructions.
+
+The composition should resemble a professional event computer-vision demonstration rather than a science-fiction interface or futuristic hologram.
+
+Important visual language:
+- realistic Indonesian/Madurese crowd
+- realistic local cultural event atmosphere
+- authentic documentary camera movement
+- believable computer-vision overlay
+- simple technical visualization
+- no futuristic holograms
+- no giant floating interface
+- no excessive neon effects
+- no cinematic action effects
+
+The YOLO-style overlay is part of the generated video and should already be visible in the final output.
+
+Do NOT leave the shot as clean footage only.
+Do NOT ask for later manual bounding-box compositing.
+Do NOT generate a separate empty UI screen instead of detecting people in the actual crowd footage.
+
+No unrelated logos.
+No subtitles.
+No captions.
+No watermarks.
+No fake government logos.
+No celebrity faces.
+No unreadable gibberish text beyond the simple detection labels and counter described above.
 
 Duration: approximately 8–10 seconds.
 Aspect ratio: 16:9.
@@ -249,8 +285,9 @@ After each generation, check:
 - [ ] No unwanted subtitles.
 - [ ] Lighting stays consistent.
 - [ ] The footage can be cut into the storyboard without explaining itself.
-- [ ] There is enough clean space for later motion graphics.
-- [ ] The generated footage does NOT attempt to create the SEP dashboard, YOLO UI, sentiment graph or quadrant matrix. Those will be composited separately.
+- [ ] The generated footage does NOT create the SEP dashboard, sentiment graph or quadrant matrix.
+- [ ] VEO-04 already contains the required YOLO-style detection overlay and visitor counter, so manual bounding-box compositing is not required.
+- [ ] Any later edit should be limited to trimming, audio, color and placement in the final timeline.
 
 # IMPORTANT PRODUCTION RULE
 
