@@ -145,13 +145,13 @@
 **Shot 8.3 — 3s:** counter bertambah secara visual.  
 **Shot 8.4 — 2s:** label teknologi muncul.
 
-**Production:** crowd footage + compositing / motion graphics.  
+**Production:** VEO-04 generates the crowd footage with the YOLO-style detection overlay already visible. No manual bounding-box compositing is required.  
 **Technology label:** YOLO — MULTI-OBJECT DETECTION
 
 **VO:** “Untuk membantu mengestimasi jumlah pengunjung, SEP memanfaatkan computer vision berbasis YOLO untuk mendeteksi banyak objek manusia dalam satu frame.”  
 **On-screen:** MULTI-OBJECT DETECTION → VISITOR ESTIMATION
 
-**Important:** angka seperti 127, 342, 587, 1,024 hanya visual ilustratif untuk animasi, bukan klaim data pengunjung nyata.
+**Important:** angka seperti 37, 42, 48 hanya visual ilustratif dari generated overlay, bukan klaim data pengunjung nyata.
 
 ---
 
