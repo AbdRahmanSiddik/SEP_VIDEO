@@ -206,7 +206,7 @@ Crowd → bounding boxes → tracking → count:
 - `04_PEOPLE/PPL_CROWD_03_TONG_TONG_SPECTATORS.jpg`
 
 ### PRODUKSI
-Motion graphic / compositing YOLO.
+**VEO-04 langsung menghasilkan crowd + YOLO-style bounding boxes + counter di dalam footage.** Tidak perlu membuat bounding box secara manual. Editing akhir cukup untuk trimming, audio, color dan penempatan shot.
 
 ### On-screen
 **MULTI-OBJECT DETECTION**
@@ -380,16 +380,16 @@ Sebelum editing final, buat footage generatif berikut:
 Event aftermath / lampu panggung padam.
 
 ### VEO-02
-Pengunjung merekam event dengan smartphone.
+Pertanyaan yang tertinggal: UMKM menghitung transaksi, visitor melihat smartphone, organizer melihat laporan.
 
 ### VEO-03
-UMKM menerima pembayaran / menghitung transaksi.
+Jejak digital: pengunjung merekam event dengan smartphone.
 
 ### VEO-04
-Abstract data-flow / digital engagement.
+Crowd + YOLO-style computer-vision overlay + visitor counter, langsung dari generated footage.
 
 ### VEO-05
-Crowd footage yang cocok untuk YOLO tracking.
+Tidak digunakan pada production pack saat ini; jangan membuat prompt tambahan tanpa revisi storyboard.
 
 ### VEO-06
 Closing event Sumenep yang terasa hopeful dan cinematic.
